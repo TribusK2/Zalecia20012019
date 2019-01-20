@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("p").css("background","yellow")
+            $("#inny").css("background","lightgreen");
+            $("p.klasa").css("background", "orange");
+            $("input[type='text']").css("background","pink");
+            $("input[type='password']").css("background","lightblue");
+            $("input[type='submit']").css("background","white");
+            $("ul li").css("background","violet");
+            $("#lista2 li").css("background","red");
+            $(".lista3 li").css("background","gray");
+            $("a[target='_blank").css("background","green");
+        });
+    </script>
+</head>
+<body>
+    <p id="inny">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolore veritatis minus omnis repellat voluptatum, eos perspiciatis? Beatae illum dolore quibusdam maiores voluptates eum modi vel eveniet, eos, nobis eius!</p>
+    <p class="klasa">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolore veritatis minus omnis repellat voluptatum, eos perspiciatis? Beatae illum dolore quibusdam maiores voluptates eum modi vel eveniet, eos, nobis eius!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolore veritatis minus omnis repellat voluptatum, eos perspiciatis? Beatae illum dolore quibusdam maiores voluptates eum modi vel eveniet, eos, nobis eius!</p>
+    <p class="klasa">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi dolore veritatis minus omnis repellat voluptatum, eos perspiciatis? Beatae illum dolore quibusdam maiores voluptates eum modi vel eveniet, eos, nobis eius!</p>
+    <form action="">
+        <label>Nazwa użykownika: <input type="text"></label><br>
+        <label>Hasło użykownika: <input type="password"></label><br>
+        <input type="submit" value="Zaloguj">
+    </form>
+    <ul>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ab?</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ab?</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ab?</li>
+    </ul>
+    <ul id="lista2">
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ab?</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ab?</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ab?</li>
+    </ul>
+    <ul class="lista3">
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ab?</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ab?</li>
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, ab?</li>
+    </ul>
+    <p>
+        Idź do <a href="http://wp.pl" target="_blank">Wirtualna Polska</a>
+    </p>
+</body>
+</html>

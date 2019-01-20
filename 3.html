@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <script>
+        
+        $(document).ready(function(){
+           $("tr:odd").css("background","yellow"); //tylko nieparzyste
+           $("tr:even").css("background","orange"); //tylko parzyste
+           $("p:first").css("background","pink"); //tylko pierwszy
+           $("p:last").css("background","lightgreen"); //tylko ostatni
+           $("p:nth-child(3)").css("background","lightblue"); //tylko trzeci, ale liczy tabelę jako 1 nth
+        });
+    </script>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Lp.</th>
+                <th>Imie</th>
+                <th>Nazwsko</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <th>Jan</th>
+                <th>Kowalski</th>
+            </tr>
+            <tr>
+                <th>2</th>
+                <th>Anna</th>
+                <th>Kowalskia</th>
+            </tr>
+            <tr>
+                <th>3</th>
+                <th>Maria</th>
+                <th>Kowalskia</th>
+            </tr>
+        </tbody>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque voluptatem inventore earum ad praesentium ea fuga assumenda doloremque aspernatur blanditiis perspiciatis, voluptatibus in provident repellendus quod ipsa, quam ipsam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque voluptatem inventore earum ad praesentium ea fuga assumenda doloremque aspernatur blanditiis perspiciatis, voluptatibus in provident repellendus quod ipsa, quam ipsam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque voluptatem inventore earum ad praesentium ea fuga assumenda doloremque aspernatur blanditiis perspiciatis, voluptatibus in provident repellendus quod ipsa, quam ipsam.</p>
+    <form action="">
+            <label>Nazwa użykownika: <input type="text"></label><br>
+            <label>Hasło użykownika: <input type="password"></label><br>
+            <input type="submit" value="Zaloguj">
+    </form>
+</body>
+</html>

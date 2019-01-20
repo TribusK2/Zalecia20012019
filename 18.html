@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JQuery</title>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            $("#getadd").click(function(){
+                var add = $("a").attr("href");
+                alert(add);
+            });
+            $("#setadd").click(function(){
+                // $("a").text("Onet");
+                $("a").attr("href","http://onet.pl").text("Onet");
+            });
+            $("#getimg").click(function(){
+                var add = $("img").attr("src");
+                alert(add);
+            });
+            $("#setimg").click(function(){
+                // $("img").attr("src","img/cloud.jpg").attr("alt", "cloud");
+                $("img").attr({
+                   "src": "img/cloud.jpg",
+                   "alt": "cloud",
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <button id="getadd">pobierz adres</button>
+    <button id="setadd">zmień adres</button>
+    <button id="getimg">źródło obrazka</button>
+    <button id="setimg">zmień obrazek</button>
+    <p>
+        <a href="http://wp.pl">Witrualna Polska</a>
+    </p>
+    <p>
+        <img src="img/sun.jpg" alt="sun">
+    </p>
+</body>
+</html>
